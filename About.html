@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilip handicraft</title>
+    <link rel = "stylesheet" href = "CSS/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+
+
+    <div class="header">
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="image/logo12.png" width = "250px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+            <li><a href="index.html">HOME</a></li><hr>
+            <li><a href="product.html">PRODUCTS</a></li><hr>
+            <li><a href="About.html">ABOUT</a></li><hr>
+            <li><a href="Account.html">ACCOUNT</a></li>
+        </ul>
+        </nav>
+        <a href="cart.html" ><img src="image/cart.png"width="30px" height="30px"></a>
+<img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+</div>
+
+<!-- -----main content------ -->
+
+<div class="smallcontainer">
+    <div class="row">
+        <div class="CEO">
+            <img src="image/meen.jpg">
+            <h3>MEEN SHRESTHA</h3>
+            <P>CEO(Dilip Handicrafts)</P>
+        </div>
+    
+    </div>
+</div>
+
+    <div class="column">
+        <div class="about-row-1">
+            <h2>Category</h2>
+            <img src="image/company.png">
+            <p>Industrial Company</p>
+        </div>
+        <div class="about-row-2">
+            <h2>Contact info</h2>
+            <p>G894+78 New Delhi, Delhi ( Search this in google map).
+                <br><br>
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.79301552411098!2d77.30556013117989!3d28.51822411007804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce6bee47d9021%3A0xcd5e840f04acd97!2sB-150%2F15%2C%20Beri%20Bag%20Rd%2C%20Gayatri%20Kunj%2C%20Ali%2C%20New%20Delhi%2C%20Delhi%20110076!5e1!3m2!1sen!2sin!4v1662359210906!5m2!1sen!2sin" width="700" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br><br>
+        </div>
+        <div class="about-row-3">
+            <img src="image/house.png">
+            <h3>Delhi,India</h3>
+            <p>Address</p>
+        </div>
+        <div class="about-row-3">
+            <img src="image/phone.png">
+            <h3>+91 9999001162</h3>
+            <p>Mobile/what's app</p>
+        </div>
+        <div class="about-row-3">
+            <img src="image/mail.png">
+            <h3>Minshrestha575@gmail.com</h3>
+            <p>Mobile</p>
+        </div>
+        <div class="about-row-3">
+            <h2>Basic info</h2>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>rating</p>
+        </div>
+    </div>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<!-- -----footer---- -->
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="footer-col-1">
+                <h3>
+                    Recognised for best Quality
+                </h3>
+                <p>
+                    Best quality and best price
+                </p>
+            </div>
+
+            <div class="footer-col-2">
+                <img src="image/logo12.png"alt="logo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, qui.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join affiliate</li>
+                </ul>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>What's app</li>
+                    <li>instagram</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p  id="copyright"> &#169; Copyright 2022</p>
+    </div>
+</div>
+
+
+<!-- js for toogle menu  -->
+
+
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if( MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>

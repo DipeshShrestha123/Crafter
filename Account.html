@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilip handicraft</title>
+    <link rel = "stylesheet" href = "CSS/Account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+
+
+    <div class="header">
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="image/logo12.png" width = "250px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+            <li><a href="index.html">HOME</a></li><hr>
+            <li><a href="product.html">PRODUCTS</a></li><hr>
+            <li><a href="About.html">ABOUT</a></li><hr>
+            <li><a href="Account.html">ACCOUNT</a></li>
+        </ul>
+        </nav>
+        <a href="cart.html" ><img src="image/cart.png"width="30px" height="30px"></a>
+        <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+</div>
+
+
+
+<!-- -----footer---- -->
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="footer-col-1">
+                <h3>
+                    Recognised for best Quality
+                </h3>
+                <p>
+                    Best quality and best price
+                </p>
+            </div>
+
+            <div class="footer-col-2">
+                <img src="image/logo12.png" alt="logo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, qui.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join affiliate</li>
+                </ul>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>What's app</li>
+                    <li>instagram</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p  id="copyright"> &#169; Copyright 2022</p>
+    </div>
+</div>
+
+
+    <!-- js for toogle menu  -->
+
+
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if( MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
