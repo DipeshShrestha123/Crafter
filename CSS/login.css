@@ -18,7 +18,7 @@ body {
   display: grid;
   place-items: center;
   margin: 0;
-  background-image: url("/svgfile/bbblurry.svg");
+  background-image: url("svgfile/bbblurry.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
