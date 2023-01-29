@@ -171,8 +171,9 @@ body {
   .card{
     width: 450px;
     line-height: 20px;
-    height: 37rem;
+    height: 40rem;
     padding: 30px;
+    top: -13rem;
   }
   .fa-eye{
     font-size:18px;
@@ -186,7 +187,8 @@ body {
 @media (max-width:770px){
 
   .card{
-    height: 37rem;
+    height: 40rem;
+    top: -7rem;
   }
   .fa-eye{
     top: 21rem;
@@ -199,6 +201,7 @@ body {
   .card{
     width: 400px;
     height: 37rem;
+    top: -5rem;
   }
   .card .logo{
     height: 13%;
@@ -251,6 +254,7 @@ body {
   .card{
     width: 310px;
     height: 37rem;
+    top: 0rem;
   }
   .fa-eye{
     font-size: 15px;
