@@ -56,7 +56,7 @@
 // database End
 
   alert("Register Sucessfully");
-  window.location.replace("http://127.0.0.1:5500/index.html");
+  window.location.replace("https://dipeshshrestha123.github.io/Crafter/index.html");
   inputs.forEach(input => input.value = '');
   // ...
 })
@@ -105,7 +105,7 @@ loginId.addEventListener("click", (e)=> {
     })
 
     alert("user Loged in :) ");
-    window.location.replace("http://127.0.0.1:5500/home.html");
+    window.location.replace("https://dipeshshrestha123.github.io/Crafter/home.html");
 
     // ...
   })
