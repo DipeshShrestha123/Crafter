@@ -26,7 +26,7 @@
 
   
      //----- New Registration code start	  
-     if(window.location.pathname == "/signup.html"){
+     if(window.location.pathname == "/Crafter/signup.html"){
    register.addEventListener("click", function() {
 
     var email =  document.getElementById("Email").value;
