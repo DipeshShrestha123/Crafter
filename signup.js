@@ -1,3 +1,4 @@
+
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
   import { getDatabase,set ,ref, update} from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js";
@@ -41,31 +42,35 @@
       alert("Password Must be Same :) ");
     }
     else{
-    createUserWithEmailAndPassword(auth, email, password)
-.then((userCredential) => {
-  // Signed in 
-  const user = userCredential.user;
+      createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+      
+        // setting in database
+        set(ref(database,'user/' + user.uid),{
+          username: username,
+          email: email,
+          password:password
+        })
+        .then(() => {
+          alert("Register Sucessfully");
+          window.location.replace("https://dipeshshrestha123.github.io/Crafter/index.html");
+          inputs.forEach(input => input.value = '');
+        })
+        .catch((error) => {
+          alert("Error storing data: " + error.message);
+        });
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(errorMessage);
+        // ..
+      });
 
-// setting in database
 
-  set(ref(database,'user/' + user.uid),{
-    username: username,
-    email: email,
-    password:password
-  })
-// database End
-
-  alert("Register Sucessfully");
-  window.location.replace("https://dipeshshrestha123.github.io/Crafter/index.html");
-  inputs.forEach(input => input.value = '');
-  // ...
-})
-.catch((error) => {
-  const errorCode = error.code;
-  const errorMessage = error.message;
-  alert(errorMessage);
-  // ..
-});
    }	  
     });
     //----- End
@@ -89,6 +94,8 @@ if(eyeslash.classList.contains("fa-eye")){
 else{
 
 loginId.addEventListener("click", (e)=> {
+
+ 
   var loginEmail = document.getElementById("loginEmail").value;
   var loginPassword = document.getElementById("loginPassword").value;
   
@@ -103,11 +110,12 @@ loginId.addEventListener("click", (e)=> {
     update(ref(database,'user/' + user.uid),{
       last_login: dt,
     })
-
-    alert("user Loged in :) ");
+    .then(() =>{
+      alert("user Loged in :) ");
     window.location.replace("https://dipeshshrestha123.github.io/Crafter/home.html");
 
-    // ...
+    })
+// ...
   })
   .catch((error) => {
     const errorCode = error.code;
@@ -120,5 +128,3 @@ loginId.addEventListener("click", (e)=> {
 
 
 }
-
-
